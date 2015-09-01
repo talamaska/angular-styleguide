@@ -2989,6 +2989,43 @@ Use file templates or snippets to help follow consistent styles and patterns. He
     ngfilter     // creates an Angular filter
     ```
 
+### NetBeans
+###### [Style [Y257](#style-y257)]
+
+  - [NetBeans](https://netbeans.org/) snippets that follow these styles and guidelines.
+
+    - Download the [NetBeans Angular snippets](assets/org-netbeans-modules-editor-settings-CustomCodeTemplates.xml?raw=true)
+    - create a config export of the code templates in Netbeans 
+    - Tools -> Options -> Editor -> Export -> Select Options to Export -> put check mark on Editor -> Code Templates
+    - navigate to the zip file, open it and replace the xml inside "config/Editors/text/javascript/CodeTemplates/"
+    - if you have already some templates in Netbeans and want to keep them, you must edit the xml file manually and input the templates from the downloaded xml.
+    - Re-import the code templates 
+    - Tools -> Options -> Editor -> Import -> navigate to the previously exported config.zip
+    
+
+    ```javascript
+        // These are full file snippets containing an IIFE
+        ngcontroller // creates an Angular controller
+        ngdirective  // creates an Angular directive
+        ngfactory    // creates an Angular factory
+        ngapp        // creates an Angular module setter
+        ngservice    // creates an Angular service
+        ngfilter     // creates an Angular filter
+
+        // These are partial snippets intended to chained
+        ngmodule     // creates an Angular module getter
+        ngstate      // creates an Angular UI Router state defintion
+        ngconfig     // defines a configuration phase function
+        ngconst      // defines a constant
+        ngvalue      // defines a value
+        ngwhen      // defines a ngroute when
+        ngrun        // defines a run phase function
+        ngroute      // defines an Angular ngRoute 'when' definition
+        ngtranslate  // uses $translate service with its promise
+    ```
+
+
+
 
 **[Back to top](#table-of-contents)**
 
